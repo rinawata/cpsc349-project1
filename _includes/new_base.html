@@ -12,6 +12,22 @@ site: Photo Gallery
 		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
 	</head>
 	<body>
-		{{ content }}
+		<nav>
+			<ui><a href="index.html">Home</a></ui>
+			<ui><a href="#">Photographers</a></ui>
+			<ui><a href="#">About Pexels</a></ui>
+			<ui><a href="aboutus/index.html">About us</a></ui>
+		</nav>
+
+		<main>{{ content }}</main>
+
+		<footer>
+			<hr />
+			<p>
+				<small>
+					<a href="https://www.pexels.com">Photos provided by Pexels</a>
+				</small>
+			</p>
+		</footer>
 	</body>
 </html>
