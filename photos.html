@@ -1,0 +1,18 @@
+---
+layout: base
+title: Home
+pagination:
+  data: photos.b5sgybo.media
+  size: 1
+  alias: winter
+permalink: "/photos/{{ winter.id | slug }}/index.html"
+---
+
+<img src="{{ winter.src.large }}" alt="" />
+<h2>This is a picture of <em>{{winter.alt}}</em></h2>
+<h4>Photography Name: <em>{{winter.photographer}}</em></h4>
+<h4>
+	Photography URL:
+	<a href="{{winter.photographer_url}}">{{winter.photographer_url}}</a>
+</h4>
+<h4>Photography ID: <em>{{winter.photographer_id}}</em></h4>

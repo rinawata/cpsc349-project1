@@ -1,11 +1,18 @@
 ---
-layout: new_base
+layout: base
 title: Home
 ---
 
 <header>
 	<h1>{{ title }}</h1>
 </header>
-<p>
-	These is a collection of photos from the website Pexels by using their API
-</p>
+
+<ul>
+	{% for media in photos.b5sgybo.media -%}
+	<li>
+		<a href="/photos/{{media.id}}"
+			><img src="{{media.src.tiny}}" alt="{{media.alt}}"
+		/></a>
+	</li>
+	{% endfor -%}
+</ul>
