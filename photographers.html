@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Home
+title: Photographers
 ---
 
 <header>
@@ -10,9 +10,7 @@ title: Home
 <ul>
 	{% for media in photos.b5sgybo.media -%}
 	<li>
-		<a href="/photos/{{media.id}}"
-			><img src="{{media.src.tiny}}" alt="{{media.alt}}"
-		/></a>
+		<a href="{{media.photographer_url}}">{{media.photographer}}</a>
 	</li>
 	{% endfor -%}
 </ul>
