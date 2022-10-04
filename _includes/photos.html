@@ -1,3 +1,6 @@
+---
+site: Photo Gallery
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -5,7 +8,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> - Photo Gallery</title>
+		<title>{{ title }} - {{ site }}</title>
 		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
 	</head>
 	<body>
@@ -26,22 +29,10 @@
 					</li>
 				</ul>
 			</nav>
-			<h1>Photo by <em>Quang Nguyen Vinh</em></h1>
+			<h1>Photo by <em>{{ winter.photographer }}</em></h1>
 		</header>
 
-		<main>
-<article>
-	<figure>
-		<img src="https://images.pexels.com/photos/2132836/pexels-photo-2132836.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Yellow Petaled Flowers on Vase" />
-	</figure>
-	<figurecaption><em>Yellow Petaled Flowers on Vase</em></figurecaption>
-	<p>
-		Photographer:
-		<a href="https://www.pexels.com/@quang-nguyen-vinh-222549">Quang Nguyen Vinh</a>
-	</p>
-	<p>Photograph ID: <em>222549</em></p>
-</article>
-</main>
+		<main>{{ content }}</main>
 
 		<footer>
 			<hr />

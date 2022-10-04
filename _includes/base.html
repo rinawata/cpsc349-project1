@@ -12,16 +12,19 @@ site: Photo Gallery
 		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/photographers/index.html">Photographers</a></li>
-				<li><a href="#">About Pexels</a></li>
-				<li><a href="aboutus/index.html">About us</a></li>
-			</ul>
-		</nav>
+		<header>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li><a href="/photographers/index.html">Photographers</a></li>
+					<li><a href="#">About Pexels</a></li>
+					<li><a href="aboutus/index.html">About us</a></li>
+				</ul>
+			</nav>
+			<h1>{{ title }}</h1>
+		</header>
 
-		<main>{{ content }}</main>
+		{{ content }}
 
 		<footer>
 			<hr />

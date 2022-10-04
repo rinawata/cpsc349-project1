@@ -3,16 +3,9 @@ layout: base
 title: Home
 ---
 
-<header>
-	<h1>{{ title }}</h1>
-</header>
+{%- for media in photos.b5sgybo.media %}
+<a href="/photos/{{media.id}}"
+	><img src="{{media.src.tiny}}" alt="{{media.alt}}"
+/></a>
 
-<ul>
-	{% for media in photos.b5sgybo.media -%}
-	<li>
-		<a href="/photos/{{media.id}}"
-			><img src="{{media.src.tiny}}" alt="{{media.alt}}"
-		/></a>
-	</li>
-	{% endfor -%}
-</ul>
+{% endfor %}
