@@ -3,18 +3,22 @@ layout: photos
 pagination:
   data: photos.b5sgybo.media
   size: 1
-  alias: winter
-permalink: "/photos/{{ winter.id | slug }}/index.html"
+  alias: flower
+permalink: "/photos/{{ flower.id | slug }}/index.html"
 ---
-
+<body style="background-color: {{ flower.avg_color}}"></body>
 <article>
+	
+	
 	<figure>
-		<img src="{{ winter.src.large }}" alt="{{ winter.alt }}" />
+		<img src="{{ flower.src.large }}" alt="{{ flower.alt }}" />
 	</figure>
-	<figurecaption><em>{{winter.alt}}</em></figurecaption>
+	<figurecaption><em>{{flower.alt}}</em></figurecaption>
 	<p>
 		Photographer:
-		<a href="{{winter.photographer_url}}">{{winter.photographer}}</a>
+		<a href="{{flower.photographer_url}}">{{flower.photographer}}</a>
 	</p>
-	<p>Photograph ID: <em>{{winter.photographer_id}}</em></p>
+	<p>Photograph ID: <em>{{flower.photographer_id}}</em></p>
+	
 </article>
+</body>
