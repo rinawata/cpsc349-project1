@@ -6,19 +6,18 @@ pagination:
   alias: flower
 permalink: "/photos/{{ flower.id | slug }}/index.html"
 ---
-<body style="background-color: {{ flower.avg_color}}"></body>
-<article>
-	
-	
-	<figure>
-		<img src="{{ flower.src.large }}" alt="{{ flower.alt }}" />
-	</figure>
-	<figurecaption><em>{{flower.alt}}</em></figurecaption>
-	<p>
-		Photographer:
-		<a href="{{flower.photographer_url}}">{{flower.photographer}}</a>
-	</p>
-	<p>Photograph ID: <em>{{flower.photographer_id}}</em></p>
-	
-</article>
-</body>
+
+<figure>
+	<img src="{{ flower.src.large }}" alt="{{ flower.alt }}" />
+</figure>
+<p><em>{{flower.alt}}</em></p>
+<p>
+	Photographer:
+	<a
+		href="{{flower.photographer_url}}"
+		target="_blank"
+		rel="noopener noreferrer"
+		>{{flower.photographer}}</a
+	>
+</p>
+<p>Photograph ID: {{flower.photographer_id}}</p>

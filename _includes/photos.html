@@ -11,21 +11,21 @@ site: Photo Gallery
 		<title>{{ title }} - {{ site }}</title>
 		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
 	</head>
-	<body>
+	<body style="background-color: {{ flower.avg_color}}">
 		<header>
 			<nav>
 				<ul>
 					<li>
-						<a href="/"><i>Home</i></a>
+						<a href="/">Home</a>
 					</li>
 					<li>
-						<a href="/photographers/index.html"><i>Photographers</i></a>
+						<a href="/photographers/index.html">Photographers</a>
 					</li>
 					<li>
-						<a href="#"><i>About Pexels</i></a>
+						<a href="#">About Pexels</a>
 					</li>
 					<li>
-						<a href="aboutus/index.html"><i>About us</i></a>
+						<a href="aboutus/index.html">About us</a>
 					</li>
 				</ul>
 			</nav>
@@ -38,7 +38,12 @@ site: Photo Gallery
 			<hr />
 			<p>
 				<small>
-					<a href="https://www.pexels.com">Photos provided by Pexels</a>
+					<a
+						href="https://www.pexels.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Photos provided by Pexels</a
+					>
 				</small>
 			</p>
 		</footer>
